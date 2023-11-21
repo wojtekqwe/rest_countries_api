@@ -76,8 +76,16 @@ main {
   padding-bottom: 40px;
 }
 
+.country {
+  background-color: white;
+  cursor: pointer;
+}
+
 .country__flag {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   height: 150px;
+  overflow: hidden;
   width: 100%;
 }
 
@@ -86,11 +94,17 @@ main {
   border-top-left-radius: 10px;
   height: 100%;
   width: 100%;
+  transition: 0.3s;
+}
+
+.country:hover .country__flag img {
+  transform: scale(1.1);
 }
 
 .info {
   background-color: white;
   color: var(--primary-bg-color);
+  font-size: 12px;
   padding: 15px;
 }
 
